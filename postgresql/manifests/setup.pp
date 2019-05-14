@@ -1,4 +1,9 @@
 
+/*
+  PostgreSQL configuration (puppet module **puppetlabs-postgresql** must be
+  installed)
+*/
+
 class { 'postgresql::server':
   # make postgres daemon listen to all interfaces
   config_entries => { 'listen_addresses' => '*', },
